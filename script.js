@@ -83,7 +83,7 @@ btnHold.addEventListener('click', function () {
   cScore = 0;
 
   //Check if active player has won
-  if (Number(document.querySelector(`.totalScore${active}`).textContent) > 20) {
+  if (Number(document.querySelector(`.totalScore${active}`).textContent) >= 100) {
     document.querySelector(`.winner${active}`).classList.remove('hidden');
     document
       .querySelector(`.box${active === 1 ? 2 : 1}`)
