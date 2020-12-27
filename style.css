@@ -138,3 +138,16 @@ button:focus {
 .hidden {
   display: none;
 }
+
+.loser {
+  background-color: rgb(158, 154, 154);
+  filter: blur(3px);
+}
+
+.winner1,
+.winner2 {
+  position: absolute;
+  top: 4%;
+  font-size: 300%;
+  color: rgb(255, 228, 75);
+}
