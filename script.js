@@ -138,3 +138,18 @@ btnClose.addEventListener('click', function () {
   document.querySelector('.rulesModal').classList.add('hidden');
   document.querySelector('.overlay').classList.add('hidden');
 });
+
+document.addEventListener('keydown', function (e) {
+  if (
+    e.key == 'Escape' &&
+    !document.querySelector('.rulesModal').classList.contains('hidden')
+  ) {
+    document.querySelector('.rulesModal').classList.add('hidden');
+    document.querySelector('.overlay').classList.add('hidden');
+  }
+});
+
+document.querySelector('.overlay').addEventListener('click', function () {
+  document.querySelector('.rulesModal').classList.add('hidden');
+  document.querySelector('.overlay').classList.add('hidden');
+});
