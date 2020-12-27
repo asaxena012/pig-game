@@ -30,6 +30,7 @@ diceEl.classList.add('hidden');
 document.querySelector('.winner1').classList.add('hidden');
 document.querySelector('.winner2').classList.add('hidden');
 let playing = true; //State variable
+box1El.classList.add('selected');
 
 //Switch Player function
 const switchPlayer = function () {
@@ -112,9 +113,12 @@ btnNew.addEventListener('click', function () {
   tScore2 = 0;
 
   //Active player
-  active = 1;
   document.querySelector(`.winner${active}`).classList.add('hidden');
   document
     .querySelector(`.box${active === 1 ? 2 : 1}`)
     .classList.remove('loser');
+
+  active = 1;
+  box1El.classList.add('selected');
+  box2El.classList.remove('selected');
 });
