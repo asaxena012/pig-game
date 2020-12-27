@@ -122,3 +122,19 @@ btnNew.addEventListener('click', function () {
   box1El.classList.add('selected');
   box2El.classList.remove('selected');
 });
+
+//Rules modal functionality
+const btnRules = document.querySelector('.rules');
+
+btnRules.addEventListener('click', function () {
+  document.querySelector('.rulesModal').classList.remove('hidden');
+  document.querySelector('.overlay').classList.remove('hidden');
+});
+
+//Close rules functionalities
+const btnClose = document.querySelector('.close-modal');
+
+btnClose.addEventListener('click', function () {
+  document.querySelector('.rulesModal').classList.add('hidden');
+  document.querySelector('.overlay').classList.add('hidden');
+});

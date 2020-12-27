@@ -37,9 +37,25 @@
     <button class="newGame">🔁 &nbsp NEW GAME</button>
     <button class="rollDice">🎲 &nbsp ROLL DICE</button>
     <button class="hold">⏸ &nbsp HOLD</button>
+    <button class="rules">📏&nbsp RULES</button>
 
     <!--Dice Image-->
     <img src="dice-1.png" class="dice" />
+
+    <!---Rules section-->
+    <div class="rulesModal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>THE PIG GAME</h2>
+      <h2><u>RULES</u></h3>
+        <ul>
+          <li>Rolling the dice generates a random number between 1 and 6.</li>
+          <li>If the number turns out to be 1, current player loses its current score and other players turn begins.</li>
+          <li>Else, the number is added to the current player's current score.</li>
+          <li>The player can press the hold button to add its current score to the total player score.</li>
+          <li>The player who hits the score 100 first, wins.</li>
+        </ul>
+    </div>
+    <div class= "overlay hidden"></div>
 
     <script src="script.js"></script>
   </body>
