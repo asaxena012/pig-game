@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Nunito', sans-serif;
+  color: #333;
+}
+
+section {
+  display: flex;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 82vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 70vh;
+  position: relative;
+}
+
+.box1 {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.box2 {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.selected {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.selected h1 {
+  font-weight: 600 !important;
+}
+
+.box h1 {
+  position: absolute;
+  top: 18%;
+  font-size: 250%;
+  font-weight: 200;
+}
+
+.totalScore1,
+.totalScore2 {
+  position: absolute;
+  top: 30%;
+  color: #c7365f;
+  font-size: 500%;
+}
+
+button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(77, 77, 77);
+  font-family: 'Nunito', sans-serif;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 12px 25px;
+  font-size: 115%;
+  font-weight: 200;
+  cursor: pointer;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+button:active {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -45%);
+}
+
+button:focus {
+  outline: none;
+}
+
+.newGame {
+  top: 17%;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  width: 100px;
+  height: auto;
+}
+
+.rollDice {
+  top: 67%;
+}
+
+.hold {
+  top: 78%;
+}
+
+.currentScoreBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 67%;
+  width: 200px;
+  height: auto;
+  background-color: rgba(199, 0, 80, 0.5);
+  color: rgba(226, 226, 226, 0.911);
+  border-radius: 10px;
+}
+
+.currentScoreBox p {
+  margin: 20px;
+}
+
+.currentScore1,
+.currentScore2 {
+  font-size: 220%;
+}
+
+.hidden {
+  display: none;
+}
