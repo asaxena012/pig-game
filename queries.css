@@ -201,4 +201,9 @@
   .hold {
     top: 74%;
   }
+
+  .dice {
+    width: 64px;
+    height: auto;
+  }
 }
