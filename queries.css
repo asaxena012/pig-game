@@ -1,0 +1,204 @@
+@media only screen and (max-width: 1184px) {
+  .box {
+    height: 82vh;
+    width: 60vh;
+  }
+
+  button {
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .rules {
+    top: 5%;
+    left: 8%;
+  }
+  .box {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 892px) {
+  .box {
+    width: 50vh;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 85%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .box {
+    height: 82vh;
+    width: 45vh;
+  }
+
+  /* button {
+    border-radius: 22px;
+    padding: 10px 15px;
+    font-size: 85%;
+  }
+
+  .rules {
+    top: 5%;
+    left: 12%;
+  }
+*/
+  .currentScoreBox {
+    width: 145px;
+    height: auto;
+  }
+
+  .rulesModal {
+    line-height: 200%;
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  html {
+    transform: rotate(90deg);
+  }
+
+  .box {
+    height: 72vh;
+    width: 45vh;
+  }
+
+  .winner1,
+  .winner2 {
+    font-size: 200%;
+  }
+
+  button {
+    padding: 10px 10px;
+    font-size: 80%;
+  }
+
+  .box h1 {
+    font-size: 200%;
+  }
+
+  .totalScore1,
+  .totalScore2 {
+    font-size: 400%;
+  }
+
+  .rules {
+    top: 10%;
+  }
+
+  .newGame {
+    top: 22%;
+  }
+
+  section {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .box {
+    height: 67vh;
+  }
+
+  .rules {
+    top: 13%;
+  }
+}
+
+@media only screen and (max-width: 588px) {
+  .box {
+    height: 66vh;
+    width: 45vh;
+  }
+
+  .dice {
+    width: 75px;
+    height: auto;
+  }
+
+  .newGame {
+    top: 24%;
+  }
+
+  .rules {
+    top: 14.5%;
+  }
+
+  .currentScoreBox {
+    width: 130px;
+    height: auto;
+  }
+
+  .winner1,
+  .winner2 {
+    font-size: 140%;
+  }
+}
+
+@media only screen and (max-width: 552px) {
+  .box {
+    height: 62vh;
+  }
+
+  button {
+    padding: 9px 9px;
+    font-size: 70%;
+  }
+
+  .box h1 {
+    font-size: 170%;
+  }
+
+  .totalScore1,
+  .totalScore2 {
+    font-size: 300%;
+  }
+
+  .rules {
+    top: 16.5%;
+  }
+
+  .newGame {
+    top: 26%;
+  }
+
+  .currentScoreBox {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .box {
+    height: 55vh;
+  }
+
+  .currentScoreBox {
+    width: 110px;
+    height: 110px;
+    font-size: 85%;
+  }
+
+  .rules {
+    top: 20%;
+  }
+
+  .newGame {
+    top: 28.5%;
+  }
+
+  .rollDice {
+    top: 65%;
+  }
+
+  .hold {
+    top: 74%;
+  }
+}
