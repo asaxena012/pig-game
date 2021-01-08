@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -8,26 +9,52 @@
 
 body {
   height: 100vh;
+  background-image: -webkit-gradient(
+    linear,
+    right bottom,
+    left top,
+    from(#753682),
+    to(#bf2e34)
+  );
+  background-image: -o-linear-gradient(bottom right, #753682 0%, #bf2e34 100%);
   background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-family: 'Nunito', sans-serif;
   color: #333;
 }
 
 section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .box {
   background-color: rgba(255, 255, 255, 0.4);
   height: 82vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
   flex-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 70vh;
   position: relative;
@@ -69,6 +96,8 @@ section {
 button {
   position: absolute;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: rgb(77, 77, 77);
   font-family: 'Nunito', sans-serif;
@@ -79,11 +108,17 @@ button {
   font-size: 115%;
   font-weight: 300;
   cursor: pointer;
+  -webkit-box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 button:active {
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  -webkit-transform: translate(-50%, -45%);
+  -ms-transform: translate(-50%, -45%);
   transform: translate(-50%, -45%);
 }
 
@@ -98,6 +133,8 @@ button:focus {
 .dice {
   position: absolute;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   top: 40%;
   width: 100px;
@@ -113,9 +150,18 @@ button:focus {
 }
 
 .currentScoreBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: absolute;
   top: 67%;
@@ -141,6 +187,7 @@ button:focus {
 
 .loser {
   background-color: rgb(158, 154, 154);
+  -webkit-filter: blur(3px);
   filter: blur(3px);
 }
 
@@ -164,9 +211,18 @@ button:focus {
   background-color: #fff;
   border-radius: 10px;
   width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   line-height: 250%;
   padding: 50px;
@@ -194,6 +250,7 @@ button:focus {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   z-index: 5;
 }
