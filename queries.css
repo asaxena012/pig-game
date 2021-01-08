@@ -61,8 +61,10 @@
 }
 
 @media only screen and (max-width: 668px) {
-  html {
+  body {
     transform: rotate(90deg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
   .box {
